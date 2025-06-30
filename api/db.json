@@ -1,1 +1,47 @@
-{}
+{
+  "products": [
+    {
+      "id" : 1,
+      "categoryId": 2,
+      "productName": "Telefon", 
+      "quantityPerUnit": "40-50",
+      "unitPrice": "100",
+      "unitsInStock": 15
+
+    },
+    {
+       "id" : 2,
+      "categoryId": 3,
+      "productName": "Bilgisayar", 
+      "quantityPerUnit": "90-95",
+      "unitPrice": "250",
+      "unitsInStock": 20
+    },
+    {
+      "id" : 3,
+      "categoryId": 4,
+      "productName": "Tablet", 
+      "quantityPerUnit": "60-70",
+      "unitPrice": "150",
+      "unitsInStock": 30
+    }
+  ],
+   "categories": [
+    {
+      "id": 1,
+      "categoryName": "Bilgisayar",
+      "seoUrl": "bilgisay"
+    },
+    {
+      "id": 2,
+      "categoryName": "Telefon",
+      "seoUrl": "tel"
+    },
+    {
+      "id": 3,
+      "categoryName": "Tablet",
+      "seoUrl": "tab"
+    }
+  ]
+}
+
