@@ -29,16 +29,19 @@
    "categories": [
     {
       "id": 1,
+      "categoryId": 2,
       "categoryName": "Bilgisayar",
       "seoUrl": "bilgisay"
     },
     {
       "id": 2,
+       "categoryId": 3,
       "categoryName": "Telefon",
       "seoUrl": "tel"
     },
     {
       "id": 3,
+      "categoryId": 4,
       "categoryName": "Tablet",
       "seoUrl": "tab"
     }

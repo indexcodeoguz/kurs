@@ -24,14 +24,14 @@ getCategories = () => {
     this.props.changeCategory(category);
   };
 
-  render() {  //js render ediliyor 
+render() {  //js render ediliyor 
     return (
       <div>
         <h3>{this.props.info.title}</h3>
 
         <ListGroup>
-          {this.state.categories.map((category) => ( // her kategotri icin bir satır liste elemanı olusturuyor
-            <ListGroupItem
+          {this.state.categories.map(category=> ( // her kategotri icin bir satır liste elemanı olusturuyor
+            <ListGroupItem   active={category.categoryName === this.state.currentCategory?true:false} // hepsini mavi yapiyo active ..category id eşitmi mevcut kategorinin ismi currentcategorye eşitse active true değilse false
               onClick={() => this.changeCategory(category)} // tıklama yapınca kategori değiştirilir
               key={category.id} 
             >
