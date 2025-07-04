@@ -13,6 +13,9 @@ import {
   DropdownItem,
   NavbarText,
 } from 'reactstrap';
+import { Link } from 'react-router-dom';
+
+
 
 function Navi({cart}) {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +30,12 @@ console.log(cart);
         <Collapse isOpen={isOpen} navbar>
           <Nav className navbar>
             <NavItem>
-              <NavLink href="/components/">Components</NavLink>
+              <NavLink to="/form1/">Form</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="https://github.com/reactstrap/reactstrap">
+              <Link href="https://github.com/reactstrap/reactstrap">
                 GitHub
-              </NavLink>
+              </Link>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
               <DropdownToggle nav caret>

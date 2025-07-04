@@ -3,6 +3,9 @@ import Navi from "./Navi"; //  navi category productlist import ettim
 import Category from "./Category";
 import Productlist from "./Productlist";
 import { Container, Row, Col } from "reactstrap"; // reactstrrapden container row ve column import ettim
+import { Routes , Route , BrowserRouter} from "react-router-dom";
+import FormDemo1 from "./FormDemo1";
+
 
 export default class App extends Component {
   // ana bileşen ismi tanımladım
@@ -63,6 +66,11 @@ export default class App extends Component {
                 currentCategory={this.state.currentCategory} // seçili kategori props olarak verilir
                 info={productInfo} // başlık bilgisi
               />
+            <BrowserRouter>
+      <Routes>
+        <Route path="/form1" component={FormDemo1} />
+      </Routes>
+  </BrowserRouter>
             </Col>
           </Row>
         </Container>
